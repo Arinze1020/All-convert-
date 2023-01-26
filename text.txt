@@ -1,0 +1,40 @@
+Code for python, flask server
+Add route '/' with Get method and return index.html
+Add route '/jpgtopng' with Get method and return jpgtopng.html
+Add route '/pngtojpg' with Get method and return pngtojpg.html
+Add route '/webtopng' with Get method and return webtopng.html
+Add route '/bmptopng' with Get method and return bmptopng.html
+Add roite '/pngtopdf' with Get method and return pngtopdf.html
+
+
+code for index.html file. create  a div and add thess 5 inlink as list in it with href= approprate route
+from our flask server
+JPG to PNG convert
+PNG to JPG convert
+WEBP to PNG convert
+BMP to PNG convert
+PNG to PDFconvert
+
+
+code for jpgtopng.html file
+display input form, so user can select image from their computer.
+also add a 'convert to PNG' button
+onclick button, check if image is slected amd image is jpg from and less than 5 mb
+if true then send post request tonroute '/api/jpgtopng' with image as parameter.
+else show relvent error like select a image or image is not jpg format
+
+
+
+code for jpgtopng.html file
+display input form, so user can select image from their computer.
+also add a 'convert to PNG' button
+onclick button, check if image is slected amd image is jpg from and less than 5 mb
+if true then send post request tonroute '/api/jpgtopng' with image as parameter.
+else show relvent error like select a image or image is not jpg format
+
+
+
+
+
+from server, create a route "/api/jpgtopng" with POST method.
+Take the Image from parameter and convert into PNG. make response object with image as attachment and return it.
